@@ -1,66 +1,443 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Title</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/uikit.min.css" />
-		<link rel="stylesheet" href="css/estiloaux.css" />
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-    </head>
-    <body>
+<html lang="es">
 
-		<div uk-sticky=" show-on-up: true;  animation: uk-animation-slide-top">
+<head>
+  <title>Lorenzo Díaz Arquitecto</title>
 
-			<nav class="uk-navbar uk-navbar-container uk-margin=0" uk-navbar style="position: relative; z-index: 1000;">
-				<div class="uk-navbar-left">
-					<a class="uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-nav-primary">
-						<span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Pajero</span>
-					</a>
-				</div>
-			</nav>
-			
-			<div class="custom-shape-divider-top-1635249909">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-				</svg>
-			</div>
+  <meta charset="UTF-8">
+  <link rel="icon" href="assets/images/logos/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Estudio de arquitectura en Málaga con más de 30 años de experiencia. Diseñamos espacios contemporáneos y sostenibles, proyectos urbanísticos a medida.">
 
-			
-            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                        <li class="uk-nav-header">Información</li>
-                        <li class="uk-nav-divider"></li>
-                        <li><span class="uk-margin-small-right"></span> Primera seccion</li>
-                        <li><span class="uk-margin-small-right"></span> Segunda seccion</li>
-                        <li><span class="uk-margin-small-right"></span> Tercera seccion</li>
-                        <li><span class="uk-margin-small-right"></span> Cuarta seccion</li>
-                    </ul>
-                </div>
-            </div>
-			
-	</div>
-			<article class="uk-article; uk-align-center">
-				<h1 class="uk-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h1>
-				<p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-			</article>
-        
-			<article class="uk-article; uk-align-center">
-				<h1 class="uk-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h1>
-				<p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-			</article>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lorenzo Díaz Arquitecto">
+  <meta property="og:description"
+    content="Estudio de arquitectura en Málaga con más de 30 años de experiencia. Diseñamos espacios contemporáneos y sostenibles, proyectos urbanísticos a medida.">
+  <meta property="og:image" content="https://janofari.github.io/assets/images/logos/OpenGraph.jpg">
+  <meta property="og:url" content="https://janofari.github.io/">
 
-			<article class="uk-article; uk-align-center">
-				<h1 class="uk-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h1>
-				<p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-			</article>
-			
-			<article class="uk-article">
-				<h1 class="uk-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h1>
-				<p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-			</article>
-    </body>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lorenzo Díaz Arquitecto">
+  <meta name="twitter:description"
+    content="Estudio de arquitectura en Málaga con más de 30 años de experiencia. Diseñamos espacios contemporáneos y sostenibles, proyectos urbanísticos a medida.">
+  <meta name="twitter:image" content="https://janofari.github.io/assets/images/logos/OpenGraph.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+
+<body>
+  <!-- ------------------------------------------------ -->
+  <!-- Menu lateral oculto tras el boton de menu        -->
+  <!-- ------------------------------------------------ -->
+
+  <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+    aria-controls="offcanvasNav">
+    ☰
+  </button>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="offcanvas-header flex-column align-items-center">
+      <!-- Logo centrado -->
+      <button type="button" class="btn-close align-self-end" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      <a href="/" class="offcanvas-logo-link">
+        <img src="assets/images/logos/LogoNegro.png" alt="Logo Lorenzo Díaz" class="offcanvas-logo mb-2">
+      </a>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="#servicios">Servicios</a>
+        <a class="nav-link" href="#sobreelestudio">Sobre el estudio</a>
+        <a class="nav-link" href="#premios">Premios</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------ -->
+  <!-- Carrusel a pantalla completa con transición fade -->
+  <!-- ------------------------------------------------ -->
+
+  <div id="landingCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000"
+        style="background-image: url('assets/images/homepage/portada_1.jpg');"></div>
+      <div class="carousel-item" data-bs-interval="3000"
+        style="background-image: url('assets/images/homepage/portada_2.jpg');"></div>
+      <div class="carousel-item" data-bs-interval="3000"
+        style="background-image: url('assets/images/homepage/portada_3.jpg');"></div>
+      <div class="carousel-item" data-bs-interval="3000"
+        style="background-image: url('assets/images/homepage/portada_4.jpg');"></div>
+      <div class="carousel-item" data-bs-interval="3000"
+        style="background-image: url('assets/images/homepage/portada_5.jpg');"></div>
+    </div>
+
+    <!-- Logo centrado -->
+    <div class="carousel-logo text-center">
+      <a href="/">
+        <img src="assets/images/logos/LogoBlanco.png" alt="Logo Blanco" class="carousel-logo-img">
+      </a>
+    </div>
+
+    <!-- Texto único superpuesto -->
+    <div class="carousel-overlay-text text-center">
+      <h1 class="text-overlay">
+        <span class="fade-in-1">LORENZO DÍAZ</span><br>
+        <span class="fade-in-2">ARQUITECTO</span>
+      </h1>
+      <div class="down-arrow mt-5">
+        <a href="#presentacion">
+          <!-- Flecha SVG blanca -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-chevron-down"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------ -->
+  <!-- Sección de presentación                          -->
+  <!-- ------------------------------------------------ -->
+
+  <section id="presentacion" class="section-below" style="background-color: white; padding: 60px 0;">
+    <div class="container">
+
+      <h2 style="text-align: center; margin-bottom: 40px;">
+        Creamos espacios que inspiran.
+      </h2>
+      <h2 style="text-align: center; margin-bottom: 40px;">
+        Arquitectura contemporánea con esencia mediterránea
+      </h2>
+
+      <p class="textos-presentaciones">
+        Con más de 30 años de trayectoria en el sector, el estudio de arquitectura de Lorenzo Díaz Cabiale se ha
+        consolidado como un referente en Málaga en el diseño y ejecución de proyectos arquitectónicos modernos y
+        contemporáneos. Nuestro equipo ha desarrollado una amplia variedad de obras tanto de carácter
+        público como privado, abarcando proyectos de edificación, urbanismo, planeamiento, reformas integrales e
+        informes técnicos especializados.
+      </p>
+
+      <p class="textos-presentaciones">
+        Desde el corazón de la Costa del Sol, creamos soluciones arquitectónicas únicas, combinando experiencia,
+        precisión técnica y sensibilidad estética. Estamos especializados en el diseño de villas exclusivas y viviendas
+        unifamiliares de líneas puras y materiales nobles, con más de 100 proyectos residenciales realizados en Málaga y
+        su provincia.
+
+        Cada obra refleja nuestra pasión por la arquitectura bien hecha, adaptada al entorno, funcional y pensada para
+        perdurar. Ya sea para una nueva vivienda, una rehabilitación o un proyecto urbanístico, nuestro compromiso es
+        transformar cada idea en un espacio excepcional.
+      </p>
+
+      <div class="seo" style="height: 0; overflow: hidden; visibility: hidden;">
+        <p>
+          Estudio de arquitectura en Málaga con más de 30 años de experiencia en el diseño de viviendas modernas,
+          arquitectura contemporánea y proyectos urbanísticos en toda la provincia. Nuestros arquitectos expertos están
+          especializados en obra nueva, rehabilitación de edificios, reformas integrales y planificación urbanística.
+          Ofrecemos servicios de arquitectura técnica, dirección de obra, legalización de proyectos y elaboración de
+          informes técnicos para viviendas unifamiliares, edificios plurifamiliares y espacios comerciales.
+
+          La arquitectura en Málaga está en constante evolución, y nuestro estudio apuesta por el diseño sostenible,
+          materiales nobles y soluciones constructivas eficientes. Nos enfocamos en crear obras arquitectónicas que
+          respondan a las necesidades del cliente y se integren armónicamente en su entorno. Diseñamos villas
+          exclusivas,
+          viviendas de lujo, promociones residenciales y edificaciones públicas con un enfoque contemporáneo.
+
+          Si estás buscando un arquitecto en Málaga para tu proyecto de vivienda, reforma o edificación, somos tu mejor
+          aliado. En nuestro estudio de arquitectura moderno, trabajamos desde la conceptualización hasta la ejecución
+          de
+          la obra, cuidando cada detalle técnico y estético. Ofrecemos asesoramiento personalizado y gestionamos todos
+          los
+          trámites necesarios para hacer realidad tu idea arquitectónica.
+
+          Nuestro compromiso es con la excelencia arquitectónica, la eficiencia energética y la durabilidad de cada
+          obra.
+          Confía en un estudio de arquitectura con experiencia, pasión por el diseño moderno y visión de futuro en
+          Málaga.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------------ -->
+  <!-- Cartas de proyectos                              -->
+  <!-- ------------------------------------------------ -->
+
+  <section class="container-fluid my-5 px-4 px-lg-5">
+    <h2 id="proyectos" class="section-title">Proyectos</h2>
+    <div class="row justify-content-center gy-4 cards-row">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card position-relative" data-bg="assets/images/proyectos/vivienda_pc/01viviendapc.jpg">
+          <a href="vivienda_pc/" class="stretched-link text-decoration-none"></a>
+          <span>Vivienda P∩C</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card position-relative" data-bg="assets/images/proyectos/parador_nerja/04nerja.jpg">
+          <a href="parador_nerja/" class="stretched-link text-decoration-none"></a>
+          <span>Parador de Nerja</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card position-relative" data-bg="assets/images/proyectos/villa_olivar/villa_olivar_1.jpg">
+          <a href="villa_olivar/" class="stretched-link text-decoration-none"></a>
+          <span>Villa del Olivar</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card position-relative" data-bg="assets/images/proyectos/casa_ocana/01ocana.jpg">
+          <a href="casa_ocana/" class="stretched-link text-decoration-none"></a>
+          <span>Casa Ocaña</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card position-relative"
+          data-bg="assets/images/proyectos/centro_comercial/centro_comercial_1.jpg">
+          <a href="centro_comercial/" class="stretched-link text-decoration-none"></a>
+          <span>Centro Comercial</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card position-relative" data-bg="assets/images/proyectos/mijas/01Mijas.jpg">
+          <a href="villa_mijas/" class="stretched-link text-decoration-none"></a>
+          <span>Villa en Mijas</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="sobreelestudio" class="container my-5">
+    <h2 class="section-title text-center mb-4">Sobre el estudio</h2>
+    <div class="timeline-item">
+      <div class="textos-presentaciones">
+        <h3>De la idea al espacio</h3>
+        <p>
+          Lorenzo Mª Díaz Cabiale, arquitecto, fundó el estudio en 1992 y desde entonces ha desarrollado una amplia
+          actividad en los campos de la arquitectura y el urbanismo, especialmente en la provincia de Málaga. A lo
+          largo de los años ha ampliado su experiencia y diversificado sus líneas de trabajo, con una atención
+          constante al diseño, la funcionalidad y el trato cercano con el cliente.
+        </p>
+        <p>
+          Su enfoque le permite abordar de forma integral proyectos de viviendas, acompañando y asesorando al cliente
+          en todas las fases, desde el planteamiento inicial hasta la finalización de la obra.
+        </p>
+        <p>
+          Paralelamente a su labor profesional, obtuvo el título de Doctor Arquitecto en 2012 con la tesis “Influencia
+          en la trama urbana, tipología, rehabilitación y conservación de las cuatro iglesias fundacionales de
+          Málaga”. Desde 2005 es profesor en la Escuela Técnica Superior de Arquitectura de la Universidad de Málaga.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="focus-values mt-5">
+      <div class="row gx-4">
+        <div class="col-md-4 text-center mb-4">
+          <i class="icon-design h1 mb-2"></i>
+          <h4>Diseño de vanguardia</h4>
+          <p>Espacios únicos que combinan estética y uso eficiente de materiales.</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <i class="icon-sustainability h1 mb-2"></i>
+          <h4>Sostenibilidad</h4>
+          <p>Soluciones bioclimáticas y eficiencia energética integradas en cada proyecto.</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <i class="icon-client h1 mb-2"></i>
+          <h4>Trato cercano</h4>
+          <p>Acompañamos al cliente en todo el proceso para convertir sus ideas en realidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="premios" class="container my-5">
+    <h2 class="section-title text-center">Premios</h2>
+    <p class="textos-presentaciones text-center mb-5">
+      A lo largo de nuestra trayectoria hemos sido galardonados y seleccionados en múltiples convocatorias,
+      demostrando nuestro compromiso con la innovación, la calidad y la excelencia en cada proyecto.
+    </p>
+
+    <div class="premios-grid">
+      <!-- 2003 -->
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2003</span>
+          <h3 class="premio-title">Casa Adela (Vivienda Unifamiliar)</h3>
+        </header>
+        <p class="premio-desc">
+          Obra expuesta y publicada en la convocatoria de Premios Málaga 2003 COA Málaga, Título I Modalidad A.
+        </p>
+      </article>
+
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2003</span>
+          <h3 class="premio-title">Mesa U &amp; Mistic Cube</h3>
+        </header>
+        <p class="premio-desc">
+          Obra expuesta y publicada en la convocatoria de Premios Málaga 2003 COA Málaga, Título I Modalidad C.
+        </p>
+      </article>
+
+      <!-- 2003-04 -->
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2003-04</span>
+          <h3 class="premio-title">Primer premio Piscina Cubierta Semiolímpica</h3>
+        </header>
+        <p class="premio-desc">
+          Concurso restringido 2003-04, Proyecto Básico y de Ejecución, Cuevas de Almanzora (Almería). Junta de
+          Andalucía.
+        </p>
+      </article>
+
+      <!-- 2004 -->
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2004</span>
+          <h3 class="premio-title">Modificación PEPRI Centro (Equipo seleccionado)</h3>
+        </header>
+        <p class="premio-desc">
+          COA Málaga / Ayuntamiento de Málaga, propuesta de urbanismo y regeneración del centro histórico.
+        </p>
+      </article>
+
+      <!-- 2007 -->
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2007</span>
+          <h3 class="premio-title">Cementerio en Algatocín</h3>
+        </header>
+        <p class="premio-desc">
+          Obra expuesta y publicada en la convocatoria de Premios Málaga 2007 COA Málaga.
+        </p>
+      </article>
+
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2007</span>
+          <h3 class="premio-title">46 VPO San Felipe Neri (Málaga)</h3>
+        </header>
+        <p class="premio-desc">
+          Obra expuesta y publicada en la convocatoria de Premios Málaga 2007 COA Málaga.
+        </p>
+      </article>
+
+      <!-- 2011 -->
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2011</span>
+          <h3 class="premio-title">Casa Verónica (Vivienda Unifamiliar)</h3>
+        </header>
+        <p class="premio-desc">
+          Obra expuesta y publicada en la convocatoria de Premios Málaga 2011 COA Málaga.
+        </p>
+      </article>
+
+      <!-- 2013 -->
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2013</span>
+          <h3 class="premio-title">El mundo de Sofía (Vivienda Unifamiliar)</h3>
+        </header>
+        <p class="premio-desc">
+          Obra expuesta y publicada en la convocatoria de Premios Málaga 2013 COA Málaga.
+        </p>
+      </article>
+
+      <article class="premio-card">
+        <header class="premio-header">
+          <span class="premio-year">2013</span>
+          <h3 class="premio-title">Selección concurso Edificio de Equipamiento Láser de Clase 4</h3>
+        </header>
+        <p class="premio-desc">
+          Universidad de Málaga, proyecto premiado por su innovación constructiva.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+
+  <footer id="contacto" style="background-color: #111111; color: white; padding: 60px;">
+    <div class="container">
+      <div class="row text-center">
+
+        <!-- Columna 1: Dirección -->
+        <div class="col-md-4 mb-4 text-md-start">
+          <p style="color: #aaa; margin-bottom: 1rem;">DIRECCIÓN</p>
+          <p class="mb-1">Estudio Central</p>
+          <p class="mb-1 fw-bold">ALAMEDA PRINCIPAL Nº: 6 2-J<br>MÁLAGA C.P. 29005</p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="col-md-4 mb-4 text-md-center">
+          <p style="color: #aaa; margin-bottom: 1rem;">CONTACTO</p>
+          <p class="mb-1">Estudio de arquitectura y urbanismo</p>
+          <p class="mb-1 fw-bold">LORENZO MARÍA DIAZ CABIALE</p>
+          <p class="mb-1 fw-bold">LDCESTUDIO@COAMALAGA.ES<br>+34 952 21 72 33</p>
+        </div>
+
+        <!-- Columna 3: Redes sociales -->
+        <div class="col-md-4 mb-4 text-md-end">
+          <p style="color: #aaa; margin-bottom: 1rem;">REDES SOCIALES</p>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Pinterest</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+            <li><a href="#" class="text-white text-decoration-none">YouTube</a></li>
+            <li><a href="#" class="text-white text-decoration-none">LinkedIn</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Logo centrado y legal -->
+      <div class="text-center mt-4">
+        <img src="assets/images/logos/LogoBlanco.png" alt="Logo blanco" style="height: 30px;" class="mb-3">
+        <p style="color: #aaa">© 2025 Lorenzo Díaz Arquitecto. Todos los derechos reservados.</p>
+        <p style="color: #aaa">
+          <a href="/aviso_legal/" class="text-decoration-none" style="color: #838383">Aviso legal</a> |
+          <a href="/politica_cookies/" class="text-decoration-none" style="color: #838383">Política de cookies</a> |
+          <a href="#" class="text-decoration-none" style="color: #838383">Condiciones</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts propios -->
+  <script src="assets/scripts.js"></script>
+
+</body>
+
 </html>
