@@ -15,5 +15,65 @@
 }
 
 .custom-shape-divider-top-1635249909 .shape-fill {
-    fill: #F8F8F8;
+    fill: #C70039;
+}
+
+
+.supercontenedor{
+    width:80%;
+	position:relative;
+	display: block;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.megacontenedor{
+    height:14%;
+	width: 100%;
+	position:relative;
+	display: block;
+}
+
+
+.custom-shape-divider-top-1635287549 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1635287549 svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1635287549 .shape-fill {
+    fill: #FF5733 ;
+}
+
+.custom-shape-divider-bottom-1635288070 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635288070 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1635288070 .shape-fill {
+    fill: #FF5733 ;
 }
