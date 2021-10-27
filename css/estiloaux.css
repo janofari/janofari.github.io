@@ -1,4 +1,4 @@
-.custom-shape-divider-top-1635249909 {
+.waves {
     position: relative;
     top: 0;
     left: 0;
@@ -7,14 +7,14 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1635249909 svg {
+.waves svg {
     position: relative;
     display: block;
     width: calc(134% + 1.3px);
     height: 93px;
 }
 
-.custom-shape-divider-top-1635249909 .shape-fill {
+.waves .shape-fill {
     fill: #254E58;
 }
 
