@@ -14,15 +14,12 @@
     height: 93px;
 }
 
-.waves.shape-fill {
-    fill: #254E58;
-}
-
 
 .supercontenedor{
     width:80%;
+	height:40%;
 	position:relative;
-	display: block;
+	display: inline-block;
 	margin-top:auto;
 	margin-left:auto;
 	margin-right:auto;

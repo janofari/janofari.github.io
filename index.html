@@ -10,13 +10,30 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
     </head>
-    <body style="background:#88BDBC">
-
+    <body style="background:#f6f6f6">
+		<!#88BDBC>
 		<div uk-sticky=" show-on-up: true;  animation: uk-animation-slide-top-medium" >
 
 			<nav class="uk-navbar uk-navbar-container uk-margin=0" uk-navbar style="background-color:#254E58; X; position: relative; z-index: 1000;">
 				<div class="uk-navbar-left">
-					<a class="uk-navbar-toggle" style="color:#FFFFFF" type="button" uk-toggle="target: #offcanvas-nav-primary">
+
+				<ul class="uk-navbar-nav uk-visible@s">
+					<li class="uk-active" ><a href="#" style="color: #f6f6f6">AFN</a></li>
+					<li>
+						<a href="#">Parent</a>
+						<div class="uk-navbar-dropdown">
+							<ul class="uk-nav uk-navbar-dropdown-nav">
+								<li class="uk-active"><a href="#" style="color: #f6f6f6">Active</a></li>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" style="color: #f3f3f3">Item</a></li>
+				</ul>
+
+					
+					<a class="uk-navbar-toggle uk-hidden@s" style="color:#FFFFFF" type="button" uk-toggle="target: #offcanvas-nav-primary">
 						<span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left" style="color:#FFFFFF; font-family:Helvetica;">MENU</span>
 					</a>
 				</div>
@@ -44,65 +61,72 @@
             </div>
 		</div>
 	
-		<div class="uk-container-xpand  uk-position-relative">
-			<div uk-parallax= "blur: 2">
-				<img class="uk-align-center uk-margin-auto" data-src="img/cara2.png"  width="25%" height="auto" style="min-width: 300px" uk-img>
-				<h1 class="uk-margin-auto uk-text-center" style="color:#FFFFFF; font-family: Helvetica; margin-bottom: 0px">ALEJANDRO FARIÑAS NUBLA</h1>
-				<h2 class="uk-margin-auto uk-text-center" style="color:#FFFFFF; font-family: Helvetica; margin-top: 0px">Ingeniero industrial</h2>
+		<div class="uk-background-contain uk-background-top-left uk-overlay" style="background-image: url(img/blob1.svg);">
+			<div class="uk-container-xpand uk-position-relative uk-padding-remove-bottom uk-background-contain uk-background-top-right uk-overlay" style="background-image: url(img/blob2.svg);">
+				<div uk-parallax= "y: -10">
+					<img class="uk-align-center uk-margin-auto" data-src="img/cara2.png"  width="25%" height="auto" style="min-width: 200px" uk-img>
+					<h1 class="uk-margin-auto uk-text-center" style="color:#4F4A41; font-family: Helvetica; margin-bottom: 0px">ALEJANDRO FARIÑAS NUBLA</h1>
+					<h2 class="uk-margin-auto uk-text-center" style="color:#4F4A41; font-family: Helvetica; margin-top: 0px">Ingeniero industrial</h2>
 
-			</div>
-		</div>
-		
-		<div class="uk-container-xpand uk-margin-auto uk-align-center">
-
-		</div>
-		
-
-		
-		<div class="supercontenedor">	
-			<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="img/asmr.jpg" alt="" uk-cover>
-					<canvas width="1079" height="726"></canvas>
 				</div>
-				<div>
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Media Left</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+			</div>
+			<div class="uk-container uk-margin">
+				<div class="uk-child-width-expand@m uk-text-center" uk-grid>
+					<div>
+						<div class="uk-card uk-padding-large uk-padding-remove-top" style="background:none">
+							<img class="uk-height-medium uk-margin-large-right uk-visible@m" uk-img="data-src:img/infopersonal.svg" uk-svg>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-body ">
+							<h3>DATOS PERSONALES</h3>
+							<ul class="uk-list" style="text-align:left">
+								<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
+								<li><span uk-icon="calendar" style="margin-right:10px"></span>09/03/1999</li>
+								<li><span uk-icon="mail" style="margin-right:10px"></span>janofanu@gmail.com</li>
+								<li><span uk-icon="linkedin" style="margin-right:10px"></span><a class="uk-link-reset" href="https://www.linkedin.com/in/alejandro-fari%C3%B1as-nubla/">Linked In</a></li>
+								<li><span uk-icon="location" style="margin-right:10px"></span>Majadahonda, Madrid</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="uk-container-xpand uk-padding uk-padding-remove-bottom uk-padding-remove-top">
+			<div class="uk-card uk-card-default uk-card-body uk-width-4-5@m uk-margin uk-margin-auto" style="border-radius: 10px; ">
+				<div class="uk-flex">
+						
+					<div class="uk-text-center">	
+						<h3>DATOS PERSONALES</h3>
+						<ul class="uk-list">
+							<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
+							<li><span uk-icon="user" style="margin-right:10px"></span>List item 2</li>
+							<li>List item 3</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="supercontenedor">	
-			<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="img/asmr.jpg" alt="" uk-cover>
-					<canvas width="1079" height="726"></canvas>
-				</div>
-				<div>
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Media Left</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+		<div class="uk-container-xpand uk-padding uk-padding-remove-bottom uk-padding-remove-top">
+			<div class="uk-card uk-card-default uk-card-body uk-width-4-5@m uk-margin uk-margin-auto" style="border-radius: 10px; ">
+				<div class="uk-flex">
+					<img class="uk-height-medium uk-margin-large-right uk-visible@l"  uk-img="data-src:img/infopersonal.svg" uk-svg>	
+					<div class="uk-margin-auto@s">	
+						<h3>DATOS PERSONALES</h3>
+						<ul class="uk-list">
+							<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
+							<li><span uk-icon="calendar" style="margin-right:10px"></span>09/03/1999</li>
+							<li><span uk-icon="mail" style="margin-right:10px"></span>janofanu@gmail.com</li>
+							<li><span uk-icon="phone" style="margin-right:10px"></span>+34 686054422</li>
+							<li><span uk-icon="location" style="margin-right:10px"></span>C/Numancia1, portal3 1ºB, 28221, Majadahonda, Madrid</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+	
 		
-		<div class="supercontenedor">	
-			<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="img/asmr.jpg" alt="" uk-cover>
-					<canvas width="1079" height="726"></canvas>
-				</div>
-				<div>
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Media Left</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
+			
     </body>
 </html>
