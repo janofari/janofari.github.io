@@ -12,65 +12,70 @@
     </head>
     <body style="background:#f6f6f6">
 		<!#88BDBC>
-		<div uk-sticky=" show-on-up: true;  animation: uk-animation-slide-top-medium" >
-
-			<nav class="uk-navbar uk-navbar-container uk-margin=0" uk-navbar style="background-color:#254E58; X; position: relative; z-index: 1000;">
-				<div class="uk-navbar-left">
-
-				<ul class="uk-navbar-nav uk-visible@s">
-					<li class="uk-active" ><a href="#" style="color: #f6f6f6">AFN</a></li>
-					<li>
-						<a href="#">Parent</a>
-						<div class="uk-navbar-dropdown">
-							<ul class="uk-nav uk-navbar-dropdown-nav">
-								<li class="uk-active"><a href="#" style="color: #f6f6f6">Active</a></li>
-								<li><a href="#">Item</a></li>
-								<li><a href="#">Item</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#" style="color: #f3f3f3">Item</a></li>
-				</ul>
-
-					
-					<a class="uk-navbar-toggle uk-hidden@s" style="color:#FFFFFF" type="button" uk-toggle="target: #offcanvas-nav-primary">
-						<span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left" style="color:#FFFFFF; font-family:Helvetica;">MENU</span>
-					</a>
-				</div>
-			</nav>
-			
-			<div class="waves" style="fill:#254E58">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-				</svg>
-			</div>
 		
+		<div class="uk-background-cover"  style="background-image: url(img/fondotriangulo.svg);">
+			<div uk-sticky=" show-on-up: true;  animation: uk-animation-slide-top-medium" >
+				<nav class="uk-navbar uk-navbar-container" uk-navbar style="background-color:#254E58; X; position: relative; z-index: 1000;">
+					<div class="uk-navbar-left">
+
+					<ul class="uk-navbar-nav uk-visible@s">
+						<li class="uk-margin-medium-left"><a href="#" style="color: #f3f3f3">SOBRE MÍ</a></li>
+						<li>
+							<a href="#" style="color: #f6f6f6">FORMACIÓN</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li><a href="#">EDUCACIÓN</a></li>
+									<li><a href="#">MÉRITOS</a></li>
+									<li><a href="#">EXPERIENCIA LABORAL</a></li>
+									<li><a href="#">APTITUDES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#" style="color: #f3f3f3">CONTÁCTAME</a></li>
+					</ul>
+
+						
+						<a class="uk-navbar-toggle uk-hidden@s" style="color:#FFFFFF" type="button" uk-toggle="target: #offcanvas-nav-primary">
+							<span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left" style="color:#FFFFFF; font-family:Helvetica;">MENU</span>
+						</a>
+					</div>
+				</nav>
+				
+				<div class="custom-shape-divider-top-1635596314 uk-visible@s">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+						<path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+					</svg>
+				</div>
 			
-            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-                <div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background-color:#112D32">
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                        <li class="uk-nav-header uk-text-large">Secciones</li>
-                        <li class="uk-nav-divider"></li>
-                        <li class="uk-text-large"><span class="uk-margin-small-right"></span> Primera seccion</li>
-                        <li class="uk-text-large"><span class="uk-margin-small-right"></span> Segunda seccion</li>
-                        <li class="uk-text-large"><span class="uk-margin-small-right"></span> Tercera seccion</li>
-                        <li class="uk-text-large"><span class="uk-margin-small-right"></span> Cuarta seccion</li>
-                    </ul>
-                </div>
-            </div>
-		</div>
+				
+				<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+					<div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background-color:#112D32">
+						<button class="uk-offcanvas-close" type="button" uk-close></button>
+						<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical"  style="text-align:left">
+							<li class="uk-nav-header uk-text-large"><h1 class="uk-margin-remove-bottom  uk-text-light">SECCIONES</h1></li>
+							<li class="uk-nav-divider"></li>
+							<li class="uk-text-large uk-text-light"><span class="uk-margin-small-right"></span>SOBRE MÍ</li>
+							<li class="uk-text-large uk-text-light"><span class="uk-margin-small-right"></span>FORMACION</li>
+								<li class="uk-text-medium uk-text-light uk-margin-medium-left"><span span>EDUCACIÓN</li>
+								<li class="uk-text-medium uk-text-light uk-margin-medium-left"><span ></span>MÉRITOS</li>
+								<li class="uk-text-medium uk-text-light uk-margin-medium-left"><span ></span>EXPERIENCIA LABORAL</li>
+								<li class="uk-text-medium uk-text-light uk-margin-medium-left"><span ></span>APTITUDES</li>
+							<li class="uk-text-large uk-text-light"><span class="uk-margin-small-right"></span>CONTÁCTAME</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 	
-		<div class="uk-background-contain uk-background-top-left uk-overlay" style="background-image: url(img/blob1.svg);">
-			<div class="uk-container-xpand uk-position-relative uk-padding-remove-bottom uk-background-contain uk-background-top-right uk-overlay" style="background-image: url(img/blob2.svg);">
+		
+			<div class="uk-container-xpand uk-position-relative uk-padding-remove-bottom">
 				<div uk-parallax= "y: -10">
-					<img class="uk-align-center uk-margin-auto" data-src="img/cara2.png"  width="25%" height="auto" style="min-width: 200px" uk-img>
+					<img class="uk-align-center uk-margin-auto uk-margin-top" data-src="img/cara2.png"  width="25%" height="auto" style="min-width: 250px" uk-img>
 					<h1 class="uk-margin-auto uk-text-center" style="color:#4F4A41; font-family: Helvetica; margin-bottom: 0px">ALEJANDRO FARIÑAS NUBLA</h1>
 					<h2 class="uk-margin-auto uk-text-center" style="color:#4F4A41; font-family: Helvetica; margin-top: 0px">Ingeniero industrial</h2>
 
 				</div>
 			</div>
-			<div class="uk-container uk-margin">
+			<div class="uk-container">
 				<div class="uk-child-width-expand@m uk-text-center" uk-grid>
 					<div>
 						<div class="uk-card uk-padding-large uk-padding-remove-top" style="background:none">
@@ -78,9 +83,9 @@
 						</div>
 					</div>
 					<div>
-						<div class="uk-card uk-card-default uk-card-body ">
+						<div class="uk-card uk-card-default uk-card-body uk-margin-bottom ">
 							<h3>DATOS PERSONALES</h3>
-							<ul class="uk-list" style="text-align:left">
+							<ul class="uk-list uk-margin-large-left" style="text-align:left">
 								<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
 								<li><span uk-icon="calendar" style="margin-right:10px"></span>09/03/1999</li>
 								<li><span uk-icon="mail" style="margin-right:10px"></span>janofanu@gmail.com</li>
@@ -91,41 +96,43 @@
 					</div>
 				</div>
 			</div>
-		</div>	
-		<div class="uk-container-xpand uk-padding uk-padding-remove-bottom uk-padding-remove-top">
-			<div class="uk-card uk-card-default uk-card-body uk-width-4-5@m uk-margin uk-margin-auto" style="border-radius: 10px; ">
-				<div class="uk-flex">
-						
-					<div class="uk-text-center">	
-						<h3>DATOS PERSONALES</h3>
-						<ul class="uk-list">
-							<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
-							<li><span uk-icon="user" style="margin-right:10px"></span>List item 2</li>
-							<li>List item 3</li>
-						</ul>
-					</div>
-				</div>
-			</div>
 		</div>
 		
-		<div class="uk-container-xpand uk-padding uk-padding-remove-bottom uk-padding-remove-top">
-			<div class="uk-card uk-card-default uk-card-body uk-width-4-5@m uk-margin uk-margin-auto" style="border-radius: 10px; ">
-				<div class="uk-flex">
-					<img class="uk-height-medium uk-margin-large-right uk-visible@l"  uk-img="data-src:img/infopersonal.svg" uk-svg>	
-					<div class="uk-margin-auto@s">	
-						<h3>DATOS PERSONALES</h3>
-						<ul class="uk-list">
-							<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
-							<li><span uk-icon="calendar" style="margin-right:10px"></span>09/03/1999</li>
-							<li><span uk-icon="mail" style="margin-right:10px"></span>janofanu@gmail.com</li>
-							<li><span uk-icon="phone" style="margin-right:10px"></span>+34 686054422</li>
-							<li><span uk-icon="location" style="margin-right:10px"></span>C/Numancia1, portal3 1ºB, 28221, Majadahonda, Madrid</li>
-						</ul>
+		<div class="uk-background uk-padding"  style="background-image: url(img/fondocebra.svg);">
+			<div class="uk-container-xpand uk-padding uk-padding-remove-bottom uk-padding-remove-top">
+				<div class="uk-card uk-card-default uk-card-body uk-width-4-5@m uk-margin uk-margin-auto" style="border-radius: 10px; ">
+					<div class="uk-flex">
+							
+						<div class="uk-text-center">	
+							<h3>DATOS PERSONALES</h3>
+							<ul class="uk-list">
+								<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
+								<li><span uk-icon="user" style="margin-right:10px"></span>List item 2</li>
+								<li>List item 3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="uk-container-xpand uk-padding uk-padding-remove-bottom uk-padding-remove-top">
+				<div class="uk-card uk-card-default uk-card-body uk-width-4-5@m uk-margin uk-margin-auto" style="border-radius: 10px; ">
+					<div class="uk-flex">
+						<img class="uk-height-medium uk-margin-large-right uk-visible@l"  uk-img="data-src:img/infopersonal.svg" uk-svg>	
+						<div class="uk-margin-auto@s">	
+							<h3>DATOS PERSONALES</h3>
+							<ul class="uk-list">
+								<li><span uk-icon="user" style="margin-right:10px"></span>Alejandro Fariñas Nubla</li>
+								<li><span uk-icon="calendar" style="margin-right:10px"></span>09/03/1999</li>
+								<li><span uk-icon="mail" style="margin-right:10px"></span>janofanu@gmail.com</li>
+								<li><span uk-icon="phone" style="margin-right:10px"></span>+34 686054422</li>
+								<li><span uk-icon="location" style="margin-right:10px"></span>C/Numancia1, portal3 1ºB, 28221, Majadahonda, Madrid</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
 		
 			
     </body>

@@ -1,4 +1,4 @@
-.waves {
+.custom-shape-divider-top-1635596314 {
     position: relative;
     top: 0;
     left: 0;
@@ -7,11 +7,16 @@
     line-height: 0;
 }
 
-.waves svg {
+.custom-shape-divider-top-1635596314 svg {
     position: relative;
     display: block;
-    width: calc(134% + 1.3px);
-    height: 93px;
+    width: calc(100% + 1.3px);
+    height: 30px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1635596314 .shape-fill {
+    fill: #254E58;
 }
 
 
