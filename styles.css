@@ -1,0 +1,46 @@
+/* Estilos personalizados para mejorar la estética general */
+
+header {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+  bottom: 30%;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1030;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.text-overlay {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.section-below {
+  background-color: white;
+  padding: 80px 20px;
+  color: #333;
+}
