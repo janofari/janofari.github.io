@@ -1,4 +1,4 @@
-/* Estilos personalizados para mejorar la estética general */
+/* Estilos generales */
 
 header {
   background-size: cover;
@@ -7,21 +7,50 @@ header {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 500;
+}
+
+/***********************/
+/*Texto de introduccion*/
+/***********************/
+
+
+.seo {
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 
+.texto-columns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.columna-texto {
+  flex: 1 1 45%;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .columna-texto {
+    flex: 1 1 100%;
+  }
+}
+
+
+/**************************/
 /*Estilos para el carrusel*/
+/**************************/
 
 .carousel-item {
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.carousel-caption {
-  bottom: 30%;
+  position: relative;
 }
 
 .carousel-item::before {
@@ -31,30 +60,83 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.15); 
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
 
-.carousel-caption {
-  z-index: 2; 
+#landingCarousel {
+  position: relative;
 }
 
+.carousel-overlay-text {
+  position: absolute;
+  bottom: 10vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none; 
+  color: white;
+  text-align: center;
+}
 
 .text-overlay {
-  font-size: clamp(3rem, 8vw, 6rem); 
-  font-weight: bold;
+  font-size: clamp(3rem, 8vw, 8rem);
   text-transform: uppercase;
   line-height: 1.1;
 }
 
+.fade-in-1, .fade-in-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 2s ease-out forwards;
+}
 
+.fade-in-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Flecha animada */
+.down-arrow {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+
+.carousel-logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.carousel-logo-img {
+  max-width: 60px;
+  height: auto;
+}
+
+
+/****************************************/
 /*Estilos para la navbar offside lateral*/
+/****************************************/
 
 
 .menu-button {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 40px;
+  left: 40px;
   z-index: 1030;
   background: transparent;
   border: none;
@@ -66,7 +148,7 @@ h1 {
   font-size: 1.25rem;
   color: #333333;
   padding: 0.75rem 0;
-  padding-left: 1rem; 
+  padding-left: 1rem;
 }
 
 .offcanvas-body .nav-link:hover {
@@ -80,23 +162,47 @@ h1 {
   color: #333;
 }
 
+.offcanvas-logo {
+  max-width: 50px;
+  height: auto;
+}
 
-/*Cartas de proyectos*/
+/**********************************/
+/* Seccion de cartas de proyectos */
+/**********************************/
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 8rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #242424;
+}
 
 .project-card {
-  width: clamp(60%, 70%, 80%);
-  aspect-ratio: 3 / 2; /* alto será 2/3 del ancho */
-  background-color: #f2f2f2;
-  border-radius: 1rem;
+  width: clamp(300px, 90vw, 800px); 
+  aspect-ratio: 3 / 2;              
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  font-size: 1.5rem;
-  color: #333;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  margin-bottom: 2rem; 
+}
+
+.project-card span {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
 }
 
 .project-card:hover {
