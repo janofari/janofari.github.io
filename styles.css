@@ -70,11 +70,11 @@ h1 {
 
 .carousel-overlay-text {
   position: absolute;
-  bottom: 10vh; 
+  bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  pointer-events: none; 
+  pointer-events: none;
   color: white;
   text-align: center;
 }
@@ -85,7 +85,8 @@ h1 {
   line-height: 1.1;
 }
 
-.fade-in-1, .fade-in-2 {
+.fade-in-1,
+.fade-in-2 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 2s ease-out forwards;
@@ -108,8 +109,15 @@ h1 {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
 }
 
 
@@ -135,12 +143,12 @@ h1 {
 
 .menu-button {
   position: fixed;
-  top: 40px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
   z-index: 1030;
   background: transparent;
   border: none;
-  color: white;
+  color: rgb(214, 214, 214);
   font-size: 2rem;
 }
 
@@ -172,7 +180,7 @@ h1 {
 /**********************************/
 
 .section-title {
-  font-size: clamp(2rem, 5vw, 8rem);
+  font-size: clamp(4rem, 5vw, 8rem);
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -181,8 +189,8 @@ h1 {
 }
 
 .project-card {
-  width: clamp(300px, 90vw, 800px); 
-  aspect-ratio: 3 / 2;              
+  width: clamp(300px, 90vw, 800px);
+  aspect-ratio: 3 / 2;
   background-size: cover;
   background-position: center;
   border-radius: 16px;
