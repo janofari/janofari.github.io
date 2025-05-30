@@ -211,8 +211,8 @@ h1 {
   opacity: 0;
   transform: translateY(20px) scale(1);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 

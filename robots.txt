@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /aviso_legal/
+Disallow: /politica_cookies/
+
+Disallow: /*?
+
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/js/
+
+Crawl-delay: 5
+
+Sitemap: https://janofari.github.io/sitemap.xml
+
+Host: janofari.github.io
