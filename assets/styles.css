@@ -111,7 +111,7 @@ h1 {
     height: 100vh;
     transition: left .3s ease;
     box-shadow: 2px 0 8px rgba(0, 0, 0, .15);
-    z-index: 1040;
+    z-index: 1060; /* ensure sidebar overlays other elements */
     background-color: #000 !important;
     color: #fff;
   }
