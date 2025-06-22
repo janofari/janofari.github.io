@@ -1,12 +1,26 @@
-// Cerrar menú tras clickar
-document.querySelectorAll('.offcanvas .nav-link').forEach(link => {
+document.addEventListener('DOMContentLoaded', () => {
+  const collapseEl = document.getElementById('mainNav');
+  const toggler  = document.querySelector('.navbar-toggler');
+
+  // 1) Cerrar al clicar en un enlace
+  document.querySelectorAll('#mainNav .nav-link').forEach(link => {
     link.addEventListener('click', () => {
-        const offcanvasElement = document.getElementById('offcanvasNav');
-        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
-        if (bsOffcanvas) {
-            bsOffcanvas.hide();
-        }
+      const bsCollapse = bootstrap.Collapse.getInstance(collapseEl);
+      if (bsCollapse) bsCollapse.hide();
     });
+  });
+
+  // 2) Cerrar al clicar fuera de la sidebar cuando esté abierta
+  document.addEventListener('click', (e) => {
+    const isOpen = collapseEl.classList.contains('show');
+    if (!isOpen) return;
+
+    // Si el click no fue ni en la sidebar ni en el toggler
+    if (!collapseEl.contains(e.target) && !toggler.contains(e.target)) {
+      const bsCollapse = bootstrap.Collapse.getInstance(collapseEl);
+      if (bsCollapse) bsCollapse.hide();
+    }
+  });
 });
 
 // Lazy loading

@@ -1,3 +1,9 @@
+/***** Colores y notas ********/
+/** #d2fc08 Verde-amarillo lima**/
+/** #100cfc Azul electrico**/
+/** #002b5c Azul navy**/
+
+
 /***********************/
 /* Estilos generales */
 /***********************/
@@ -48,140 +54,117 @@ h1 {
 }
 
 
-/**************************/
-/*Estilos para el carrusel*/
-/**************************/
-
-.carousel-item {
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+/* ---------------------------------- */
+/* Navbar (desktop) y toggler-icon    */
+/* ---------------------------------- */
+.navbar.navbar-dark.bg-dark {
+  background-color: #000 !important;
+  /* negro puro */
+  font-size: 1.3rem;
+  height: 80px;
+  /* altura mayor */
+  min-height: 80px;
+  padding-top: 0;
+  /* elimina el padding vertical por defecto */
+  padding-bottom: 0;
 }
 
-.carousel-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+/* Centra verticalmente los contenidos dentro de la navbar */
+.navbar-nav,
+.navbar-brand,
+.navbar-toggler {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  z-index: 1;
+  display: flex;
+  align-items: center;
 }
 
-#landingCarousel {
-  position: relative;
+/* Ajuste del icono toggler para mantenerse centrado */
+.navbar-dark .navbar-toggler-icon {
+  filter: invert(1) brightness(2);
+  /* icono visible sobre negro */
+  width: 1.5em;
+  height: 1.5em;
 }
 
-.carousel-overlay-text {
-  position: absolute;
-  bottom: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  pointer-events: none;
-  color: white;
-  text-align: center;
+/* Si tienes un logo, asegúrate que también se centre y adapte */
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
 }
 
-.text-overlay {
-  font-size: clamp(3rem, 6vw, 8rem);
-  text-transform: uppercase;
-  line-height: 1.1;
+.navbar-brand-mobile img {
+  max-height: 50px;
+  width: auto;
+  padding-bottom: 10px;
+
 }
 
-.fade-in-1,
-.fade-in-2 {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 2s ease-out forwards;
-}
+/* ---------------------------------- */
+/* Sidebar móvil (<768px)             */
+/* ---------------------------------- */
+@media (max-width: 767.98px) {
+  #mainNav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    transition: left .3s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, .15);
+    z-index: 1040;
+    background-color: #000 !important;
+    color: #fff;
+  }
 
-.fade-in-2 {
-  animation-delay: 0.6s;
-}
+  #mainNav.show {
+    left: 0;
+  }
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  #mainNav .nav-link {
+    color: #fff;
+    padding: .75rem 1rem;
+    font-size: 1.3rem;
+  }
+
+  #mainNav .nav-link:hover,
+  #mainNav .nav-link:focus {
+    color: #ccc;
   }
 }
 
-/* Flecha animada */
-.down-arrow {
-  animation: bounce 2s infinite;
+
+/* Oculta el icono de Bootstrap */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}
+
+/* Tu icono personalizado */
+.custom-toggler-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1;
   display: inline-block;
-  cursor: pointer;
-  pointer-events: auto;
+  user-select: none;
 }
 
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(8px);
-  }
-}
-
-
-.carousel-logo {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-
-.carousel-logo-img {
-  max-width: 60px;
-  height: auto;
-}
-
-
-/****************************************/
-/*Estilos para la navbar offside lateral*/
-/****************************************/
-
-
-.menu-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1030;
-  background: transparent;
+/* Opcional: quita el borde del botón para que quede solo el icono */
+.navbar-toggler {
   border: none;
-  color: rgb(214, 214, 214);
-  font-size: 2rem;
 }
 
-.offcanvas-body .nav-link {
-  font-size: 1.25rem;
-  color: #333333;
-  padding: 0.75rem 0;
-  padding-left: 1rem;
+.nav-logo-mobile {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  /* para que no interfiera con el toggler */
+  z-index: 1050;
 }
 
-.offcanvas-body .nav-link:hover {
-  color: #000000;
-  text-decoration: none;
-}
-
-.section-below {
-  background-color: white;
-  padding: 80px 20px;
-  color: #333;
-}
-
-.offcanvas-logo {
-  max-width: 50px;
-  height: auto;
+/* Asegúrate que el container sea relativo */
+.container-fluid.position-relative {
+  position: relative;
 }
 
 /**********************************/
