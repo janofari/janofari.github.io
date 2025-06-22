@@ -51,3 +51,43 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// Typewriter effect in hero heading
+document.addEventListener('DOMContentLoaded', function () {
+  const phrases = [
+    'no llegar a tus metas',
+    'verte flaco',
+    'no ganar m\u00fasculo',
+    'ese flotador'
+  ];
+  let index = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const textEl = document.getElementById('typewriter-text');
+
+  function type() {
+    const full = phrases[index] + '?';
+    if (isDeleting) {
+      charIndex--;
+      if (charIndex < 0) {
+        isDeleting = false;
+        index = (index + 1) % phrases.length;
+        charIndex = 0;
+      }
+    } else {
+      charIndex++;
+      if (charIndex === full.length) {
+        isDeleting = true;
+        setTimeout(type, 3000);
+        textEl.textContent = full;
+        return;
+      }
+    }
+    textEl.textContent = full.substring(0, charIndex);
+    setTimeout(type, isDeleting ? 100 : 150);
+  }
+
+  if (textEl) {
+    type();
+  }
+});

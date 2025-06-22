@@ -396,3 +396,18 @@ h1 {
   background: #000;
 }
 
+/* Typewriter effect */
+#typewriter-text {
+  white-space: nowrap;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
