@@ -330,7 +330,7 @@ h1 {
 /* ---------------------------------- */
 .main-hero {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -352,6 +352,39 @@ h1 {
 .main-hero .container {
   position: relative;
   z-index: 1;
+}
+
+/* Highlights below hero */
+.hero-highlights {
+  display: flex;
+  min-height: 25vh;
+}
+
+.hero-highlights .highlight-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hero-highlights .highlight-col.black {
+  background: #000;
+  color: #d2fc08;
+}
+
+.hero-highlights .highlight-col.lime {
+  background: #d2fc08;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .hero-highlights {
+    flex-direction: column;
+  }
 }
 
 .features h3 {
