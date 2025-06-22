@@ -60,6 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
     'no ganar m\u00fasculo',
     'ese flotador'
   ];
+  const holdDuration = 3000; // time to hold the full phrase
+  const typeDuration = 1000; // total time to type a phrase
+  const deleteDuration = 1000; // total time to delete a phrase
+
   let index = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -67,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function type() {
     const full = phrases[index] + '?';
+    const interval = (isDeleting ? deleteDuration : typeDuration) / full.length;
+
     if (isDeleting) {
       charIndex--;
       if (charIndex < 0) {
@@ -78,13 +84,13 @@ document.addEventListener('DOMContentLoaded', function () {
       charIndex++;
       if (charIndex === full.length) {
         isDeleting = true;
-        setTimeout(type, 3000);
         textEl.textContent = full;
+        setTimeout(type, holdDuration);
         return;
       }
     }
     textEl.textContent = full.substring(0, charIndex);
-    setTimeout(type, isDeleting ? 100 : 150);
+    setTimeout(type, interval);
   }
 
   if (textEl) {
