@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const phrases = [
     'no llegar a tus metas',
-    'verte flaco',
-    'no ganar m\u00fasculo',
-    'ese flotador'
+    'verte delgado',
+    'no ganar músculo',
+    'ese michelín'
   ];
   const holdDuration = 3000; // time to hold the full phrase
   const typeDuration = 1000; // total time to type a phrase
