@@ -8,6 +8,15 @@
 /* Estilos generales */
 /***********************/
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 700;
+}
+
 
 header {
   background-size: cover;
