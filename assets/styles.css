@@ -12,7 +12,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Saira', sans-serif;
   font-weight: 700;
 }
@@ -62,6 +67,16 @@ h1 {
   }
 }
 
+.btn-custom-blue {
+  background-color: #100cfc;
+  border-color: #100cfc;
+  color: #fff;
+}
+
+.btn-custom-blue:hover {
+  background-color: #0d0ad1;
+  border-color: #0d0ad1;
+}
 
 /* ---------------------------------- */
 /* Navbar (desktop) y toggler-icon    */
@@ -127,6 +142,7 @@ h1 {
   .custom-toggler-icon {
     font-size: 1.3rem;
   }
+
   #mainNav {
     position: fixed;
     top: 0;
@@ -135,7 +151,8 @@ h1 {
     height: 100vh;
     transition: left .3s ease;
     box-shadow: 2px 0 8px rgba(0, 0, 0, .15);
-    z-index: 1060; /* ensure sidebar overlays other elements */
+    z-index: 1060;
+    /* ensure sidebar overlays other elements */
     background-color: #000 !important;
     color: #fff;
   }
@@ -349,6 +366,7 @@ h1 {
   margin: 0;
   color: #cecece;
 }
+
 /* ---------------------------------- */
 /* Estilos para la nueva landing      */
 /* ---------------------------------- */
@@ -442,7 +460,13 @@ h1 {
 }
 
 @keyframes blink-cursor {
-  from, to { opacity: 1; }
-  50% { opacity: 0; }
-}
 
+  from,
+  to {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
