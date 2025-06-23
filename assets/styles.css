@@ -70,9 +70,9 @@ h1 {
   background-color: #000 !important;
   /* negro puro */
   font-size: 1.3rem;
-  height: 80px;
-  /* altura mayor */
-  min-height: 80px;
+  height: 60px;
+  /* altura más reducida */
+  min-height: 60px;
   padding-top: 0;
   /* elimina el padding vertical por defecto */
   padding-bottom: 0;
@@ -96,13 +96,15 @@ h1 {
 }
 
 /* Si tienes un logo, asegúrate que también se centre y adapte */
+
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 40px;
   width: auto;
 }
 
+
 .navbar-brand-mobile img {
-  max-height: 50px;
+  max-height: 40px;
   width: auto;
   padding-bottom: 10px;
 
