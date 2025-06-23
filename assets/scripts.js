@@ -97,3 +97,29 @@ document.addEventListener('DOMContentLoaded', function () {
     type();
   }
 });
+
+// Mostrar la navbar en móvil solo al hacer scroll hacia arriba
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar = document.querySelector('.navbar');
+  const collapseEl = document.getElementById('mainNav');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    if (window.innerWidth >= 768) {
+      navbar.style.transform = '';
+      return;
+    }
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScroll && currentScroll > 50) {
+      if (!collapseEl.classList.contains('show')) {
+        navbar.style.transform = 'translateY(-100%)';
+      }
+    } else {
+      navbar.style.transform = '';
+    }
+
+    lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+  });
+});

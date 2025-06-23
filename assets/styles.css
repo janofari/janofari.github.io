@@ -113,6 +113,20 @@ h1 {
 /* Sidebar móvil (<768px)             */
 /* ---------------------------------- */
 @media (max-width: 767.98px) {
+  .navbar.navbar-dark.bg-dark {
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-brand img,
+  .navbar-brand-mobile img {
+    max-height: 32px;
+    padding-bottom: 0;
+  }
+
+  .custom-toggler-icon {
+    font-size: 1.3rem;
+  }
   #mainNav {
     position: fixed;
     top: 0;
