@@ -68,11 +68,10 @@ h1 {
 /* ---------------------------------- */
 .navbar.navbar-dark.bg-dark {
   background-color: #000 !important;
-  /* negro puro */
   font-size: 1.3rem;
   height: 60px;
   /* altura más reducida */
-  min-height: 60px;
+  min-height: 40px;
   padding-top: 0;
   /* elimina el padding vertical por defecto */
   padding-bottom: 0;
@@ -371,6 +370,7 @@ h1 {
   min-height: 25vh;
 }
 
+
 .hero-highlights .highlight-col {
   flex: 1;
   display: flex;
@@ -380,6 +380,10 @@ h1 {
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.hero-highlights .highlight-text {
+  font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
 .hero-highlights .highlight-col.black {
