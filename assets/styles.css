@@ -425,6 +425,12 @@ h1 {
   background: #000;
 }
 
+/* About Me section */
+.about-me p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
 /* Typewriter effect */
 #typewriter-text {
   white-space: nowrap;
