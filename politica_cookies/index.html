@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../assets/images/logos/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Politica cookies - Lorenzo Díaz Arquitecto</title>
+    <title>Política de cookies - PabloReina Entrenador Personal</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -17,49 +17,48 @@
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 
-<body style="font-family: 'Inter', sans-serif;">
+<body class="bg-black text-white" style="font-family: 'Inter', sans-serif;">
 
 
     <!-- ------------------------------------------------ -->
-    <!-- Menu lateral oculto tras el boton de menu        -->
+    <!-- Navbar                                           -->
     <!-- ------------------------------------------------ -->
-    <div class="text-center my-4">
-        <a href="/">
-            <img src="../assets/images/logos/LogoNegro.png" alt="Logo negro" style="height: 100px;" class="mb-3">
-        </a>
-    </div>
-    <section class="container my-5"></section>
-    <h1 id="premios" class="section-title">POLÍTICA DE COOKIES</h1>
-    </section>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid position-relative">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="custom-toggler-icon">☰</span>
+            </button>
 
-    <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
-        aria-controls="offcanvasNav">
-        ☰
-    </button>
-
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
-        <div class="offcanvas-header flex-column align-items-center">
-            <!-- Logo centrado -->
-            <button type="button" class="btn-close align-self-end" data-bs-dismiss="offcanvas"
-                aria-label="Cerrar"></button>
-            <a href="/" class="offcanvas-logo-link">
-                <img src="../assets/images/logos/LogoNegro.png" alt="Logo Lorenzo Díaz" class="offcanvas-logo mb-2">
+            <!-- Logo centrado SOLO en móvil -->
+            <a href="/" class="navbar-brand-mobile nav-logo-mobile d-block d-md-none">
+                <img src="../assets/images/logos/LogoPRmini.png" alt="Logo" height="40">
             </a>
-        </div>
-        <div class="offcanvas-body">
-            <nav class="nav flex-column">
-                <a class="nav-link" href="../#proyectos">Proyectos</a>
-                <a class="nav-link" href="../#servicios">Servicios</a>
-                <a class="nav-link" href="../#sobreelestudio">Sobre el estudio</a>
-                <a class="nav-link" href="../#premios">Premios</a>
-                <a class="nav-link" href="../#contacto">Contacto</a>
-            </nav>
-        </div>
-    </div>
 
+            <!-- Logo visible en desktop -->
+            <a class="navbar-brand d-none d-md-block ms-2" href="/">
+                <img src="../assets/images/logos/LogoPRmini.png" alt="Logo" height="40">
+            </a>
 
-    <div class="container py-5">
-        <h2 class="fw-bold mt-5 mb-4">Política de cookies</h2>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="d-block d-md-none sidebar-header d-flex justify-content-between align-items-center px-3 py-2">
+                    <a href="/" class="navbar-brand m-0 flex-grow-1 d-flex justify-content-center">
+                        <img src="../assets/images/logos/LogoPRmini.png" alt="Logo" height="40">
+                    </a>
+                    <button type="button" class="btn-close btn-close-white p-0" data-bs-toggle="collapse"
+                        data-bs-target="#mainNav" aria-label="Cerrar menú"></button>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../#sobremi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 mt-5">
+        <h1 class="fw-bold my-4">Política de cookies</h1>
 
         <p style="font-size: 1.2rem; text-align: justify;">
             Este sitio web no utiliza cookies propias ni de terceros con fines de análisis, publicidad, creación de
@@ -83,47 +82,33 @@
     </div>
 
 
-    <footer style="background-color: #111111; color: white; padding: 60px;">
+    <footer id="contacto" style="background-color: #111111; color: white; padding: 60px;">
         <div class="container">
             <div class="row text-center">
-
-                <!-- Columna 1: Dirección -->
                 <div class="col-md-4 mb-4 text-md-start">
-                    <p style="color: #aaa; margin-bottom: 1rem;">DIRECCIÓN</p>
-                    <p class="mb-1">Estudio Central</p>
-                    <p class="mb-1 fw-bold">ALAMEDA PRINCIPAL Nº: 6 2-J<br>MÁLAGA C.P. 29005</p>
+                    <p style="color: #aaa; margin-bottom: 1rem;">UBICACIÓN</p>
+                    <p class="mb-1">Sevilla, España</p>
+                    <p class="mb-1 fw-bold">Entrenador Personal Online</p>
                 </div>
-
-                <!-- Columna 2: Contacto -->
                 <div class="col-md-4 mb-4 text-md-center">
                     <p style="color: #aaa; margin-bottom: 1rem;">CONTACTO</p>
-                    <p class="mb-1">Estudio de arquitectura y urbanismo</p>
-                    <p class="mb-1 fw-bold">LORENZO MARÍA DIAZ CABIALE</p>
-                    <p class="mb-1 fw-bold">LDCESTUDIO@COAMALAGA.ES<br>+34 952 21 72 33</p>
+                    <p class="mb-1 fw-bold">info@pabloreina.com</p>
+                    <p class="mb-1 fw-bold">+34 000 000 000</p>
                 </div>
-
-                <!-- Columna 3: Redes sociales -->
                 <div class="col-md-4 mb-4 text-md-end">
-                    <p style="color: #aaa; margin-bottom: 1rem;">REDES SOCIALES</p>
+                    <p style="color: #aaa; margin-bottom: 1rem;">SÍGUEME</p>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Pinterest</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">YouTube</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">LinkedIn</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">TikTok</a></li>
                     </ul>
                 </div>
-
             </div>
-
-            <!-- Logo centrado y legal -->
             <div class="text-center mt-4">
-                <img src="../assets/images/logos/LogoPRmini.png" alt="Logo blanco" style="height: 30px;" class="mb-3">
-                <p style="color: #aaa">© 2025 Lorenzo Díaz Arquitecto. Todos los derechos reservados.</p>
+                <img src="../assets/images/logos/LogoPRmini.png" alt="Logo" style="height: 30px;" class="mb-3">
+                <p style="color: #aaa">© 2025 PabloReina Training. Todos los derechos reservados.</p>
                 <p style="color: #aaa">
                     <a href="/aviso_legal/" class="text-decoration-none" style="color: #838383">Aviso legal</a> |
-                    <a href="/politica_cookies/" class="text-decoration-none" style="color: #838383">Política de
-                        cookies</a> |
+                    <a href="/politica_cookies/" class="text-decoration-none" style="color: #838383">Política de cookies</a> |
                     <a href="#" class="text-decoration-none" style="color: #838383">Condiciones</a>
                 </p>
             </div>
@@ -132,6 +117,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/scripts.js"></script>
 </body>
 
 </html>
