@@ -1,5 +1,7 @@
 /***** Colores y notas ********/
 /** #d2fc08 Verde-amarillo lima**/
+/** #99cc00 Verde oscuro**/
+/** #242424 Negro**/
 /** #100cfc Azul electrico**/
 /** #002b5c Azul navy**/
 
@@ -368,7 +370,7 @@ h1 {
 }
 
 /* ---------------------------------- */
-/* Estilos para la nueva landing      */
+/* Estilos para el HERO              */
 /* ---------------------------------- */
 .main-hero {
   position: relative;
@@ -396,15 +398,16 @@ h1 {
   z-index: 1;
 }
 
-/* Highlights below hero */
 .hero-highlights {
   display: flex;
   min-height: 25vh;
+  flex-wrap: wrap;
 }
 
 
 .hero-highlights .highlight-col {
   flex: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,19 +415,28 @@ h1 {
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #000;
+  color: #d2fc08;
 }
 
 .hero-highlights .highlight-text {
   font-size: clamp(1.2rem, 3vw, 2rem);
+  z-index: 1;
+  position: relative;
 }
 
 .hero-highlights .highlight-col.black {
-  background: #000;
+  background-color: #000000;
   color: #d2fc08;
 }
 
 .hero-highlights .highlight-col.lime {
-  background: #d2fc08;
+  background-color: #d2fc08;
   color: #000;
 }
 
@@ -443,13 +455,8 @@ h1 {
   background: #000;
 }
 
-/* About Me section */
-.about-me p {
-  font-size: 1rem;
-  text-align: justify;
-}
 
-/* Typewriter effect */
+/* Animacion Typewritter del HERO */
 #typewriter-text {
   white-space: nowrap;
 }
@@ -469,4 +476,28 @@ h1 {
   50% {
     opacity: 0;
   }
+}
+
+/* Texto debajo del typewriter */
+.text-highlight {
+  color: #e9e9e9;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------------------------- */
+/* Sección de "Sobre mí" */
+/* ---------------------------------- */
+.about-me p {
+  font-size: 1rem;
+  text-align: justify;
 }
