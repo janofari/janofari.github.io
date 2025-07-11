@@ -70,15 +70,30 @@ h1 {
 }
 
 .btn-custom-blue {
-  background-color: #100cfc;
-  border-color: #100cfc;
-  color: #fff;
+  border-color: #d2fc08;
+  border-width: 2px;
+  color: #d2fc08;
 }
 
 .btn-custom-blue:hover {
-  background-color: #0d0ad1;
-  border-color: #0d0ad1;
+  background-color: #d2fc08;
+  border-color: #d2fc08;
+  color: #000000;
 }
+
+/***
+.btn-custom-blue {
+  background-color: #d2fc08;  
+  border-color: #d2fc08;
+  color: #181818;
+}
+
+.btn-custom-blue:hover {
+  background-color: #a2c202;
+  border-color: #a2c202;
+  color: #000000;
+}
+*/
 
 /* ---------------------------------- */
 /* Navbar (desktop) y toggler-icon    */
