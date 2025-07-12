@@ -169,7 +169,6 @@ h1 {
     transition: left .3s ease;
     box-shadow: 2px 0 8px rgba(0, 0, 0, .15);
     z-index: 1060;
-    /* ensure sidebar overlays other elements */
     background-color: #000 !important;
     color: #fff;
   }
@@ -190,13 +189,10 @@ h1 {
   }
 }
 
-
-/* Oculta el icono de Bootstrap */
 .navbar-toggler .navbar-toggler-icon {
   background-image: none;
 }
 
-/* Tu icono personalizado */
 .custom-toggler-icon {
   font-size: 1.5rem;
   color: #fff;
@@ -205,7 +201,6 @@ h1 {
   user-select: none;
 }
 
-/* Opcional: quita el borde del botón para que quede solo el icono */
 .navbar-toggler {
   border: none;
 }
@@ -216,11 +211,9 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  /* para que no interfiera con el toggler */
   z-index: 1050;
 }
 
-/* Asegúrate que el container sea relativo */
 .container-fluid.position-relative {
   position: relative;
 }
@@ -524,4 +517,74 @@ h1 {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------- */
+/* SECCION SERVICIOS" */
+/* ---------------------------------- */
+
+
+.section-dark-acordeon {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-dark-acordeon {
+    padding: 2rem 3rem;
+  }
+}
+
+.custom-accordion .accordion-button {
+  background-color: #111;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem; 
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #d2fc08; 
+  color: #000;
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-button::after {
+  filter: brightness(0) invert(1); 
+}
+
+.custom-accordion .accordion-body {
+  background-color: #121212;
+  color: #ccc;
+  border-top: 1px solid #333;
+}
+
+.custom-accordion .accordion-item {
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* ---------------------------------- */
+/* FORMULARIO INSCRIPCION */
+/* ---------------------------------- */
+
+
+.formulario-iframe {
+  height: 2250px;
+}
+
+@media (max-width: 768px) {
+  .formulario-iframe {
+    height: 2500px; /* Más espacio en móvil, si se ve cortado */
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario-iframe {
+    height: 2600px; /* Aún más espacio para pantallas pequeñas */
+  }
 }
